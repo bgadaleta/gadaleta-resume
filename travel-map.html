@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gadaleta.</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container-fluid">
+    <header class="site-header">
+        <div class="row align-items-center">
+            <div class="col-4 col-sm-4 col-lg-2 order-lg-1">
+                <div class="site-branding">
+                    <h1 class="site-title"><a href="index.html" rel="home"><img src="images/gad/GadaletaLogo.png" alt="Logo"></a></h1>
+                </div><!-- .site-branding -->
+            </div><!-- .col-8 -->
+
+            <div class="col-8 col-sm-8 col-lg-10 order-3 order-md-3 order-lg-2">
+                <nav class="site-navigation flex align-items-center justify-content-end">
+                    <div class="hamburger-menu d-lg-none order-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div><!-- .hamburger-menu -->
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                      <!--  <li><a href="blog.html">Blog</a></li> -->
+                        <li><a href="regular-page.html">About</a></li>
+                        <li class="current-menu-item"><a href="travel-map.html">Travel Map</a></li>
+                    </ul>
+
+                    <div class="header-email order-1">
+                        <a href="mailto:bgadaleta@frhsd.com">bgadaleta@frhsd.com</a>
+                    </div><!-- .header-email -->
+                </nav><!-- .site-navigation -->
+            </div><!-- .col-2 -->
+        </div><!-- .row -->
+    </header><!-- .site-header -->
+
+    <div class="row">
+        <div class="content-area single-post flex">
+            <div class="col-12 col-xl-6">
+
+              <script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+              <script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+              <script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+              <div id="mapdiv" style="width: 1000px; height: 265px;"></div>
+              <div style="width: 1000px; font-size: 70%; padding: 5px 0; text-align: center; background-color: #535364; margin-top: 1px; color: #B4B4B7;"><a href="https://www.amcharts.com/visited_countries/" style="color: #B4B4B7;">Create your own visited countries map</a> or check out the <a href="https://www.amcharts.com/" style="color: #B4B4B7;">JavaScript Charts</a>.</div>
+              <script type="text/javascript">
+              var map = AmCharts.makeChart("mapdiv",{
+              type: "map",
+              theme: "dark",
+              projection: "mercator",
+              panEventsEnabled : true,
+              backgroundColor : "#535364",
+              backgroundAlpha : 1,
+              zoomControl: {
+              zoomControlEnabled : true
+              },
+              dataProvider : {
+              map : "worldHigh",
+              getAreasFromMap : true,
+              areas :
+              [
+              	{
+              		"id": "BE",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "HR",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "FR",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "GR",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "IT",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "NL",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "GB",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "BS",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "BM",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "CA",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "DO",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "JM",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "MX",
+              		"showAsSelected": true
+              	},
+              	{
+              		"id": "US",
+              		"showAsSelected": true
+              	}
+              ]
+              },
+              areasSettings : {
+              autoZoom : true,
+              color : "#B4B4B7",
+              colorSolid : "#22BF42",
+              selectedColor : "#22BF42",
+              outlineColor : "#666666",
+              rollOverColor : "#9EC2F7",
+              rollOverOutlineColor : "#000000"
+              }
+              });
+              </script>
+
+
+              <!--  <figure class="featured-img">
+                    <img src="images/gad/portfolio-about.png" alt="">
+                </figure> -->
+            </div><!-- .blog-item -->
+
+            <div class="col-12 col-xl-6">
+                <header class="entry-header">
+                    <div class="post-meta">
+                  <!--      <a href="#">Photography</a>-->
+                    </div><!-- .meta-post -->
+
+              <!--      <h1>Brian Gadaleta</h1> -->
+
+                  <!--  <span class="byline">by <span class="author"><a href="#">Phil Martinez</a></span></span> -->
+                </header><!-- .entry-header -->
+
+                <div class="entry-content">
+    <!--                <p>I am in my 12th year as a teacher and I am currently employed at Freehold High School as a Teacher of Technology and Web Design.  I am a graduate of the New Jersey Intitute of Technology with a Bachelors of Science in Information Technology.</p>
+                    <p>Besides being a teacher, I am also an avid volleyball player and amateur photographer.  I also spend my free time traveling the world with my wife.  I have been to Canada, Bermuda, the Bahamas, the Dominican Repulic, Mexico, Jamaica, English, Scotland, the Netherlands, Belgium, France, Italy, Croatia, and Greece.  I'll be able to check Japan off of my list in the near future.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Duis aute irure Lorem ipsum dolor sit amet.</p>
+-->
+                </div><!-- .entry-content -->
+            </div><!-- .single-post -->
+        </div><!-- .content-area -->
+    </div><!-- .row -->
+
+    <footer class="site-footer">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-4 order-3 order-lg-1">
+                <div class="footer-copyright">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                </div><!-- .footer-branding -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-1 order-lg-2 d-md-none d-lg-block">
+                <nav class="footer-navigation">
+                    <ul>
+                    <!--    <li><a href="#">Back to homepage</a></li> -->
+                    </ul>
+                </nav><!-- .footer-navigation -->
+            </div><!-- .col-xl-4 -->
+
+            <div class="col-12 col-lg-4 order-2 order-lg-3">
+                <div class="footer-social">
+                    <ul>
+                      <li><a href="https://www.youtube.com/channel/UCeK4Gcf5_0LXMbGl4AzVVIQ/featured"><i class="fa fa-youtube-play"></i></a></li>
+                      <li><a href="https://twitter.com/fhsteched"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="https://www.instagram.com/fhsteched/"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div><!-- .footer-social -->
+            </div><!-- .col-xl-4 -->
+        </div><!-- .row -->
+    </footer><!-- .site-footer -->
+</div><!-- .container-fluid -->
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/swiper.min.js'></script>
+<script type='text/javascript' src='js/jquery.magnific-popup.min.js'></script>
+<script type='text/javascript' src='js/masonry.pkgd.min.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+</body>
+</html>
